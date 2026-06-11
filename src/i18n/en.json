@@ -1,0 +1,144 @@
+{
+   "meta": {
+      "title": "Erick Allan — Software Engineer",
+      "description": "Software engineer building scalable backend and AI systems with Python and AWS."
+   },
+   "nav": {
+      "home": "Home",
+      "about": "About",
+      "portfolio": "My work",
+      "blog": "Blog",
+      "curriculum": "Curriculum",
+      "menu": "Menu",
+      "close": "Close menu"
+   },
+   "home": {
+      "role": "Software Engineer",
+      "greeting": "Hi, I'm Erick Allan.",
+      "skills": ["Backend systems", "AI integration", "Cloud-native (AWS)"],
+      "intro": "I build scalable backend and AI systems — Python, AWS, and cloud-native architectures — and bring AI into the workflow to ship faster, cleaner code.",
+      "ctaPortfolio": "See my work",
+      "ctaBlog": "Read the blog",
+      "recentWork": "Recent work",
+      "fromBlog": "From the blog",
+      "viewAll": "View all"
+   },
+   "about": {
+      "title": "About",
+      "paragraphs": [
+         "I'm a software engineer passionate about designing scalable, maintainable, and high-performance systems. I've worked with Python, JavaScript, relational and non-relational databases, Redis, Docker, Terraform, and AWS — building cloud-native architectures that are resilient, efficient, and secure. I also bring AI tools into my workflow to improve development speed, code quality, and problem-solving.",
+         "I've contributed to solutions across different domains — clinical management platforms, internal management systems, banking integrations, and chatbots — always with a focus on reliability, clean architecture, and long-term maintainability.",
+         "I'm deeply interested in software architecture and system design, and I'm driven by the challenge of turning complex business problems into elegant, efficient solutions."
+      ],
+      "experienceTitle": "Experience",
+      "experience": [
+         {
+            "role": "Backend Software Engineer",
+            "org": "Auramind.ai",
+            "period": "Oct 2025 — Present",
+            "location": "Goiânia, Brazil · Remote",
+            "points": [
+               "Develop backend services and AI-powered features for a corporate Generative AI platform using Python and AWS.",
+               "Build integrations with external AI providers and services, including image-generation workflows through OpenRouter.",
+               "Develop integrations with enterprise platforms such as Google Drive and Microsoft services.",
+               "Collaborate with multidisciplinary teams to deliver scalable, production-ready AI solutions."
+            ]
+         },
+         {
+            "role": "Software Engineer",
+            "org": "B2BIT",
+            "period": "Jul 2024 — Oct 2025",
+            "location": "Natal, Brazil · Hybrid",
+            "points": [
+               "Developed backend solutions with a strong focus on clean architecture, DDD, best coding practices, and delivering real value to clients.",
+               "Built frontend features for both web and mobile platforms, aiming to solve client problems effectively.",
+               "Worked on features integrating AI tools, following test-driven development (TDD).",
+               "Built and maintained robust cloud infrastructure with Infrastructure as Code (IaC) on AWS — architecture, scalability, and security best practices.",
+               "Led a development team, managing sprints, client meetings, and stakeholder communication to ensure smooth delivery."
+            ]
+         },
+         {
+            "role": "Full-stack Developer",
+            "org": "Senac RN",
+            "period": "Feb 2023 — Aug 2024",
+            "location": "Natal, Brazil · Hybrid",
+            "points": [
+               "Built an interactive dashboard to help internal teams automate management and finance tasks previously done manually.",
+               "Designed and implemented a Telegram chatbot with Node.js and PostgreSQL to support SENAC RN courses, helping students reinforce what they learned.",
+               "Managed the chatbot's full deployment — initially on Microsoft Azure, later migrated to on-premises servers."
+            ]
+         },
+         {
+            "role": "Full-stack Developer",
+            "org": "EA Web Development",
+            "period": "Jan 2021 — Feb 2023",
+            "location": "Natal, Brazil · Freelance",
+            "points": [
+               "Developed custom web applications and small-business solutions for clients with Node.js, JavaScript, React, and SQL databases.",
+               "Designed and implemented REST APIs, backend services, and database architectures tailored to each project.",
+               "Built responsive, interactive UIs with React and vanilla JavaScript.",
+               "Modeled and managed data with PostgreSQL, MySQL, and MongoDB.",
+               "Integrated third-party services and external APIs to support business workflows.",
+               "Maintained and improved existing applications, focusing on performance, scalability, and code quality.",
+               "Worked directly with clients to gather requirements and deliver projects from concept to deployment."
+            ]
+         }
+      ],
+      "educationTitle": "Education & credentials",
+      "education": [
+         {
+            "title": "B.Sc. Computer Science",
+            "org": "Universidade Potiguar",
+            "period": "2021 — 2025"
+         },
+         {
+            "title": "AWS Certified Cloud Practitioner",
+            "org": "Amazon Web Services",
+            "period": "2024"
+         }
+      ],
+      "interestsTitle": "Interests",
+      "interests": [
+         "Software architecture",
+         "System design",
+         "AI integration",
+         "Cloud-native (AWS)",
+         "Clean architecture",
+         "Backend engineering"
+      ]
+   },
+   "portfolio": {
+      "title": "My work",
+      "subtitle": "A few things I've built.",
+      "viewProject": "View project",
+      "viewRepo": "Repository",
+      "viewLive": "Website",
+      "private": "Private project",
+      "gallery": {
+         "previous": "Previous image",
+         "next": "Next image",
+         "close": "Close",
+         "open": "Open image"
+      },
+      "backToList": "Back to my work"
+   },
+   "blog": {
+      "title": "Blog",
+      "subtitle": "Notes on building software.",
+      "readMore": "Read more",
+      "backToList": "Back to blog",
+      "empty": "No posts published yet.",
+      "emptyHint": "I'm working on the first ones — check back soon."
+   },
+   "footer": {
+      "rights": "All rights reserved."
+   },
+   "theme": {
+      "toggle": "Toggle theme",
+      "random": "Surprise me",
+      "linux": "Linux mode"
+   },
+   "language": {
+      "label": "Language"
+   }
+}

@@ -1,0 +1,144 @@
+{
+   "meta": {
+      "title": "Erick Allan — Engenheiro de Software",
+      "description": "Engenheiro de software construindo sistemas escaláveis de backend e IA com Python e AWS."
+   },
+   "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "portfolio": "Meu trabalho",
+      "blog": "Blog",
+      "curriculum": "Currículo",
+      "menu": "Menu",
+      "close": "Fechar menu"
+   },
+   "home": {
+      "role": "Engenheiro de Software",
+      "greeting": "Oi, eu sou o Erick Allan.",
+      "skills": ["Sistemas backend", "Integração de IA", "Cloud-native (AWS)"],
+      "intro": "Construo sistemas escaláveis de backend e IA — Python, AWS e arquiteturas cloud-native — e uso IA no fluxo de trabalho para entregar código mais rápido e limpo.",
+      "ctaPortfolio": "Ver meu trabalho",
+      "ctaBlog": "Ler o blog",
+      "recentWork": "Trabalhos recentes",
+      "fromBlog": "Do blog",
+      "viewAll": "Ver tudo"
+   },
+   "about": {
+      "title": "Sobre",
+      "paragraphs": [
+         "Sou um engenheiro de software apaixonado por projetar sistemas escaláveis, sustentáveis e de alto desempenho. Já trabalhei com Python, JavaScript, bancos relacionais e não relacionais, Redis, Docker, Terraform e AWS — construindo arquiteturas cloud-native resilientes, eficientes e seguras. Também trago ferramentas de IA para o meu fluxo de trabalho para melhorar a velocidade de desenvolvimento, a qualidade do código e a resolução de problemas.",
+         "Contribuí em soluções de diferentes domínios — plataformas de gestão clínica, sistemas de gestão interna, integrações bancárias e chatbots — sempre com foco em confiabilidade, arquitetura limpa e manutenibilidade a longo prazo.",
+         "Tenho profundo interesse em arquitetura de software e design de sistemas, e me motiva o desafio de transformar problemas de negócio complexos em soluções elegantes e eficientes."
+      ],
+      "experienceTitle": "Experiência",
+      "experience": [
+         {
+            "role": "Engenheiro de Software Backend",
+            "org": "Auramind.ai",
+            "period": "out 2025 — Presente",
+            "location": "Goiânia, Brasil · Remoto",
+            "points": [
+               "Desenvolvo serviços de backend e recursos com IA para uma plataforma corporativa de IA generativa, usando Python e AWS.",
+               "Construo integrações com provedores e serviços de IA externos, incluindo fluxos de geração de imagens via OpenRouter.",
+               "Desenvolvo integrações com plataformas corporativas como Google Drive e serviços da Microsoft.",
+               "Colaboro com times multidisciplinares para entregar soluções de IA escaláveis e prontas para produção."
+            ]
+         },
+         {
+            "role": "Engenheiro de Software",
+            "org": "B2BIT",
+            "period": "jul 2024 — out 2025",
+            "location": "Natal, Brasil · Híbrido",
+            "points": [
+               "Desenvolvi soluções de backend com forte foco em arquitetura limpa, DDD, boas práticas de código e entrega de valor real aos clientes.",
+               "Construí funcionalidades de frontend para web e mobile, sempre buscando resolver os problemas dos clientes de forma eficaz.",
+               "Trabalhei em funcionalidades integrando ferramentas de IA, seguindo desenvolvimento orientado a testes (TDD).",
+               "Construí e mantive infraestrutura em nuvem robusta com Infraestrutura como Código (IaC) na AWS — boas práticas de arquitetura, escalabilidade e segurança.",
+               "Liderei um time de desenvolvimento, gerenciando sprints, reuniões com clientes e comunicação com stakeholders para garantir entregas tranquilas."
+            ]
+         },
+         {
+            "role": "Desenvolvedor Full-stack",
+            "org": "Senac RN",
+            "period": "fev 2023 — ago 2024",
+            "location": "Natal, Brasil · Híbrido",
+            "points": [
+               "Desenvolvi um dashboard interativo para ajudar times internos a automatizar tarefas de gestão e finanças antes feitas manualmente.",
+               "Projetei e implementei um chatbot no Telegram com Node.js e PostgreSQL para apoiar cursos do SENAC RN, ajudando alunos a reforçar o aprendizado.",
+               "Gerenciei todo o deploy do chatbot — inicialmente na Microsoft Azure e depois migrado para servidores on-premises."
+            ]
+         },
+         {
+            "role": "Desenvolvedor Full-stack",
+            "org": "EA Web Development",
+            "period": "jan 2021 — fev 2023",
+            "location": "Natal, Brasil · Freelance",
+            "points": [
+               "Desenvolvi aplicações web sob medida e soluções para pequenos negócios usando Node.js, JavaScript, React e bancos SQL.",
+               "Projetei e implementei APIs REST, serviços de backend e arquiteturas de banco de dados adequadas a cada projeto.",
+               "Construí interfaces responsivas e interativas com React e JavaScript puro.",
+               "Modelei e gerenciei dados com PostgreSQL, MySQL e MongoDB.",
+               "Integrei serviços de terceiros e APIs externas para apoiar fluxos de negócio.",
+               "Mantive e aprimorei aplicações existentes, com foco em performance, escalabilidade e qualidade de código.",
+               "Trabalhei diretamente com clientes para levantar requisitos e entregar projetos da concepção ao deploy."
+            ]
+         }
+      ],
+      "educationTitle": "Formação e credenciais",
+      "education": [
+         {
+            "title": "Bacharelado em Ciência da Computação",
+            "org": "Universidade Potiguar",
+            "period": "2021 — 2025"
+         },
+         {
+            "title": "AWS Certified Cloud Practitioner",
+            "org": "Amazon Web Services",
+            "period": "2024"
+         }
+      ],
+      "interestsTitle": "Interesses",
+      "interests": [
+         "Arquitetura de software",
+         "Design de sistemas",
+         "Integração de IA",
+         "Cloud-native (AWS)",
+         "Arquitetura limpa",
+         "Engenharia de backend"
+      ]
+   },
+   "portfolio": {
+      "title": "Meu trabalho",
+      "subtitle": "Algumas coisas que eu construí.",
+      "viewProject": "Ver projeto",
+      "viewRepo": "Repositório",
+      "viewLive": "Site",
+      "private": "Projeto privado",
+      "gallery": {
+         "previous": "Imagem anterior",
+         "next": "Próxima imagem",
+         "close": "Fechar",
+         "open": "Abrir imagem"
+      },
+      "backToList": "Voltar para meu trabalho"
+   },
+   "blog": {
+      "title": "Blog",
+      "subtitle": "Notas sobre construir software.",
+      "readMore": "Ler mais",
+      "backToList": "Voltar ao blog",
+      "empty": "Nenhum post publicado ainda.",
+      "emptyHint": "Estou preparando os primeiros — volte em breve."
+   },
+   "footer": {
+      "rights": "Todos os direitos reservados."
+   },
+   "theme": {
+      "toggle": "Alternar tema",
+      "random": "Surpreenda-me",
+      "linux": "Modo Linux"
+   },
+   "language": {
+      "label": "Idioma"
+   }
+}
