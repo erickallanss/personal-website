@@ -1,12 +1,18 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+
+import type { ProjectImage } from '@/lib/projectImages';
 
 export interface GalleryLabels {
    previous: string;
    next: string;
    close: string;
    open: string;
+   goToImage: string;
+   zoomIn: string;
+   zoomOut: string;
 }
 
 function Chevron({ dir }: { dir: 'left' | 'right' }) {
@@ -30,12 +36,13 @@ const overlayNav =
 const lightboxNav =
    'grid size-10 place-items-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-white';
 
-export function ProjectGallery({ images, name, labels }: { images: string[]; name: string; labels: GalleryLabels }) {
+export function ProjectGallery({ images, name, labels }: { images: ProjectImage[]; name: string; labels: GalleryLabels }) {
    const [index, setIndex] = useState(0);
    const [open, setOpen] = useState(false);
    const [zoomed, setZoomed] = useState(false);
    const dialogRef = useRef<HTMLDivElement>(null);
    const count = images.length;
+   const current = images[index];
 
    const goTo = (next: number) => {
       setIndex(((next % count) + count) % count);
@@ -94,17 +101,31 @@ export function ProjectGallery({ images, name, labels }: { images: string[]; nam
 
    return (
       <div>
-         <div className="group relative overflow-hidden rounded-xl border border-foreground/10 bg-foreground/5">
-            <button type="button" onClick={() => { setZoomed(false); setOpen(true); }} aria-label={labels.open} className="block w-full cursor-zoom-in">
-               {/* eslint-disable-next-line @next/next/no-img-element */}
-               <img src={images[index]} alt={`${name} — ${index + 1}`} className="aspect-video w-full object-cover" />
+         <div className="group relative aspect-video overflow-hidden rounded-xl border border-foreground/10 bg-foreground/5">
+            <button
+               type="button"
+               onClick={() => {
+                  setZoomed(false);
+                  setOpen(true);
+               }}
+               aria-label={labels.open}
+               className="absolute inset-0 cursor-zoom-in"
+            >
+               <Image
+                  src={current.src}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 768px, 100vw"
+                  priority
+                  className="object-cover"
+               />
             </button>
             {count > 1 && (
                <>
-                  <button type="button" onClick={() => step(-1)} aria-label={labels.previous} className={`absolute left-3 top-1/2 -translate-y-1/2 ${overlayNav}`}>
+                  <button type="button" onClick={() => step(-1)} aria-label={labels.previous} className={`absolute left-3 top-1/2 z-10 -translate-y-1/2 ${overlayNav}`}>
                      <Chevron dir="left" />
                   </button>
-                  <button type="button" onClick={() => step(1)} aria-label={labels.next} className={`absolute right-3 top-1/2 -translate-y-1/2 ${overlayNav}`}>
+                  <button type="button" onClick={() => step(1)} aria-label={labels.next} className={`absolute right-3 top-1/2 z-10 -translate-y-1/2 ${overlayNav}`}>
                      <Chevron dir="right" />
                   </button>
                </>
@@ -112,16 +133,20 @@ export function ProjectGallery({ images, name, labels }: { images: string[]; nam
          </div>
 
          {count > 1 && (
-            <div className="mt-3 flex justify-center gap-2">
-               {images.map((src, i) => (
+            <div className="mt-3 flex justify-center gap-1">
+               {images.map((img, i) => (
                   <button
-                     key={src}
+                     key={img.src}
                      type="button"
                      onClick={() => goTo(i)}
-                     aria-label={`${i + 1}`}
+                     aria-label={`${labels.goToImage} ${i + 1}`}
                      aria-current={i === index}
-                     className={`h-1.5 rounded-full transition-all ${i === index ? 'w-5 bg-foreground' : 'w-1.5 bg-foreground/25 hover:bg-foreground/50'}`}
-                  />
+                     className="group grid size-6 place-items-center"
+                  >
+                     <span
+                        className={`block h-1.5 rounded-full transition-all ${i === index ? 'w-5 bg-foreground' : 'w-1.5 bg-foreground/25 group-hover:bg-foreground/50'}`}
+                     />
+                  </button>
                ))}
             </div>
          )}
@@ -135,7 +160,8 @@ export function ProjectGallery({ images, name, labels }: { images: string[]; nam
                aria-label={name}
                className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 outline-none"
             >
-               <button type="button" aria-label={labels.close} onClick={() => setOpen(false)} className="absolute inset-0" />
+               {/* Click-away backdrop. Non-focusable + AT-hidden; the visible X and Escape close it. */}
+               <div aria-hidden onClick={() => setOpen(false)} className="absolute inset-0" />
 
                <span className="absolute left-4 top-4 z-10 text-sm tabular-nums text-white/60">
                   {index + 1} / {count}
@@ -156,11 +182,17 @@ export function ProjectGallery({ images, name, labels }: { images: string[]; nam
                )}
 
                <div className="relative z-10 flex max-h-full max-w-full items-center justify-center overflow-auto">
-                  <button type="button" onClick={() => setZoomed((value) => !value)} className={zoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}>
+                  <button
+                     type="button"
+                     aria-label={zoomed ? labels.zoomOut : labels.zoomIn}
+                     aria-pressed={zoomed}
+                     onClick={() => setZoomed((value) => !value)}
+                     className={zoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}
+                  >
                      {/* eslint-disable-next-line @next/next/no-img-element */}
                      <img
-                        src={images[index]}
-                        alt={`${name} — ${index + 1}`}
+                        src={current.src}
+                        alt=""
                         className={zoomed ? 'max-h-none max-w-none' : 'max-h-[88vh] max-w-[92vw] object-contain'}
                      />
                   </button>
