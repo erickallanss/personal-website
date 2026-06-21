@@ -1,6 +1,6 @@
 {
    "meta": {
-      "title": "Erick Allan — Software Engineer",
+      "title": "Erick Allan — Software Engineer · AI Engineer",
       "description": "Software engineer building scalable backend and AI systems with Python and AWS."
    },
    "nav": {
@@ -10,20 +10,27 @@
       "blog": "Blog",
       "curriculum": "Curriculum",
       "menu": "Menu",
-      "close": "Close menu"
+      "close": "Close menu",
+      "skipToContent": "Skip to content",
+      "contact": "Contact"
    },
    "home": {
-      "role": "Software Engineer",
+      "role": "Software Engineer · AI Engineer",
       "greeting": "Hi, I'm Erick Allan.",
-      "skills": ["Backend systems", "AI integration", "Cloud-native (AWS)"],
-      "intro": "I build scalable backend and AI systems — Python, AWS, and cloud-native architectures — and bring AI into the workflow to ship faster, cleaner code.",
+      "skills": ["Python", "TypeScript", "Django", "DRF", "React", "Next.js", "AWS", "Terraform", "Docker", "PostgreSQL", "Redis", "AI integration"],
+      "intro": "Whether it's a landing page that converts or a complete platform that runs your operation, I take your idea from the first conversation to a finished product that's live and working — always focused on what truly matters to you: more revenue, less wasted time, and something you can rely on.",
       "ctaPortfolio": "See my work",
       "ctaBlog": "Read the blog",
       "recentWork": "Recent work",
       "fromBlog": "From the blog",
-      "viewAll": "View all"
+      "viewAll": "View all",
+      "focusLabel": "Focus",
+      "elsewhereLabel": "Elsewhere",
+      "tagline": "I build software that solves real problems and delivers measurable results for your business.",
+      "ctaContact": "Get in touch"
    },
    "about": {
+      "eyebrow": "About",
       "title": "About",
       "paragraphs": [
          "I'm a software engineer passionate about designing scalable, maintainable, and high-performance systems. I've worked with Python, JavaScript, relational and non-relational databases, Redis, Docker, Terraform, and AWS — building cloud-native architectures that are resilient, efficient, and secure. I also bring AI tools into my workflow to improve development speed, code quality, and problem-solving.",
@@ -101,13 +108,21 @@
       "interests": [
          "Software architecture",
          "System design",
-         "AI integration",
-         "Cloud-native (AWS)",
+         "Distributed systems",
          "Clean architecture",
-         "Backend engineering"
+         "Domain-Driven Design",
+         "Test-driven development",
+         "Backend engineering",
+         "API design",
+         "Cloud-native (AWS)",
+         "Infrastructure as Code",
+         "AI integration",
+         "Artificial Intelligence",
+         "Performance & scalability"
       ]
    },
    "portfolio": {
+      "eyebrow": "Selected work",
       "title": "My work",
       "subtitle": "A few things I've built.",
       "viewProject": "View project",
@@ -118,17 +133,34 @@
          "previous": "Previous image",
          "next": "Next image",
          "close": "Close",
-         "open": "Open image"
+         "open": "Open image",
+         "goToImage": "Go to image",
+         "zoomIn": "Zoom in",
+         "zoomOut": "Zoom out"
       },
-      "backToList": "Back to my work"
+      "backToList": "Back to my work",
+      "galleryLabel": "Gallery",
+      "overviewLabel": "Overview",
+      "facts": { "role": "Role", "type": "Type", "status": "Status", "timeline": "Timeline" }
    },
    "blog": {
+      "eyebrow": "Writing",
       "title": "Blog",
       "subtitle": "Notes on building software.",
       "readMore": "Read more",
       "backToList": "Back to blog",
       "empty": "No posts published yet.",
       "emptyHint": "I'm working on the first ones — check back soon."
+   },
+   "contact": {
+      "eyebrow": "Contact",
+      "title": "Get in touch",
+      "subtitle": "The fastest way to reach me is WhatsApp — email and phone work too.",
+      "whatsappLabel": "WhatsApp",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "copy": "Copy",
+      "copied": "Copied"
    },
    "footer": {
       "rights": "All rights reserved."
@@ -140,5 +172,17 @@
    },
    "language": {
       "label": "Language"
+   },
+   "command": {
+      "placeholder": "Type a command or search…",
+      "empty": "No results found.",
+      "hint": "Command menu",
+      "groupNav": "Navigate",
+      "groupTheme": "Theme",
+      "groupLinks": "Links",
+      "groupLang": "Language",
+      "copyEmail": "Copy email",
+      "copiedEmail": "Email copied",
+      "downloadCv": "Download CV"
    }
 }

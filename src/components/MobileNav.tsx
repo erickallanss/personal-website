@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export interface MobileNavItem {
    href: string;
@@ -31,14 +31,32 @@ function CloseIcon() {
 export function MobileNav({ items, menuLabel, closeLabel }: { items: MobileNavItem[]; menuLabel: string; closeLabel: string }) {
    const [open, setOpen] = useState(false);
    const pathname = usePathname();
+   const triggerRef = useRef<HTMLButtonElement>(null);
+   const navRef = useRef<HTMLElement>(null);
    const close = () => setOpen(false);
+
+   // While open: Escape closes and returns focus to the trigger; move focus into the menu on open.
+   useEffect(() => {
+      if (!open) return;
+      const onKey = (event: KeyboardEvent) => {
+         if (event.key === 'Escape') {
+            setOpen(false);
+            triggerRef.current?.focus();
+         }
+      };
+      document.addEventListener('keydown', onKey);
+      navRef.current?.querySelector<HTMLElement>('a')?.focus();
+      return () => document.removeEventListener('keydown', onKey);
+   }, [open]);
 
    return (
       <div className="sm:hidden">
          <button
+            ref={triggerRef}
             type="button"
-            aria-label={menuLabel}
+            aria-label={open ? closeLabel : menuLabel}
             aria-expanded={open}
+            aria-controls="mobile-menu"
             onClick={() => setOpen((value) => !value)}
             className="grid size-8 place-items-center rounded-md text-foreground/70 transition-colors hover:text-foreground"
          >
@@ -47,9 +65,15 @@ export function MobileNav({ items, menuLabel, closeLabel }: { items: MobileNavIt
 
          {open && (
             <>
-               <button type="button" aria-label={closeLabel} onClick={close} className="fixed inset-0 z-40" />
-               <nav className="absolute inset-x-0 top-16 z-50 border-b border-foreground/10 bg-background shadow-lg">
-                  <ul className="mx-auto flex w-full max-w-3xl flex-col px-6 py-2 text-sm">
+               {/* Click-away backdrop. Non-focusable + AT-hidden; Escape provides the keyboard close. */}
+               <div aria-hidden onClick={close} className="fixed inset-0 z-40" />
+               <nav
+                  id="mobile-menu"
+                  ref={navRef}
+                  aria-label={menuLabel}
+                  className="absolute inset-x-0 top-16 z-50 border-b border-foreground/10 bg-background shadow-lg"
+               >
+                  <ul className="mx-auto flex w-full max-w-5xl flex-col px-6 py-2 text-sm">
                      {items.map((item) => {
                         if (item.external) {
                            return (

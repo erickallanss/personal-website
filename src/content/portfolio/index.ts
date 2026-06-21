@@ -10,6 +10,11 @@ export interface ProjectMeta {
    tags?: string[];
    /** When true, the card shows a "Private project" tag and no repo link. */
    private?: boolean;
+   /** Optional "fact strip" fields shown on the project detail header. */
+   role?: string;
+   projectType?: string;
+   status?: string;
+   timeline?: string;
 }
 
 interface MdxModule {

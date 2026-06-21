@@ -1,6 +1,6 @@
 {
    "meta": {
-      "title": "Erick Allan — Engenheiro de Software",
+      "title": "Erick Allan — Software Engineer · AI Engineer",
       "description": "Engenheiro de software construindo sistemas escaláveis de backend e IA com Python e AWS."
    },
    "nav": {
@@ -10,20 +10,27 @@
       "blog": "Blog",
       "curriculum": "Currículo",
       "menu": "Menu",
-      "close": "Fechar menu"
+      "close": "Fechar menu",
+      "skipToContent": "Pular para o conteúdo",
+      "contact": "Contato"
    },
    "home": {
-      "role": "Engenheiro de Software",
+      "role": "Software Engineer · AI Engineer",
       "greeting": "Oi, eu sou o Erick Allan.",
-      "skills": ["Sistemas backend", "Integração de IA", "Cloud-native (AWS)"],
-      "intro": "Construo sistemas escaláveis de backend e IA — Python, AWS e arquiteturas cloud-native — e uso IA no fluxo de trabalho para entregar código mais rápido e limpo.",
+      "skills": ["Python", "TypeScript", "Django", "DRF", "React", "Next.js", "AWS", "Terraform", "Docker", "PostgreSQL", "Redis", "Integração de IA"],
+      "intro": "Seja uma landing page que converte ou uma plataforma completa que roda a sua operação, levo a sua ideia da primeira conversa até o produto pronto e no ar — sempre com foco no que realmente importa para você: mais receita, menos tempo perdido e algo em que você pode confiar.",
       "ctaPortfolio": "Ver meu trabalho",
       "ctaBlog": "Ler o blog",
       "recentWork": "Trabalhos recentes",
       "fromBlog": "Do blog",
-      "viewAll": "Ver tudo"
+      "viewAll": "Ver tudo",
+      "focusLabel": "Foco",
+      "elsewhereLabel": "Redes",
+      "tagline": "Construo software que resolve problemas reais e entrega resultados mensuráveis para o seu negócio.",
+      "ctaContact": "Entre em contato"
    },
    "about": {
+      "eyebrow": "Sobre",
       "title": "Sobre",
       "paragraphs": [
          "Sou um engenheiro de software apaixonado por projetar sistemas escaláveis, sustentáveis e de alto desempenho. Já trabalhei com Python, JavaScript, bancos relacionais e não relacionais, Redis, Docker, Terraform e AWS — construindo arquiteturas cloud-native resilientes, eficientes e seguras. Também trago ferramentas de IA para o meu fluxo de trabalho para melhorar a velocidade de desenvolvimento, a qualidade do código e a resolução de problemas.",
@@ -33,7 +40,7 @@
       "experienceTitle": "Experiência",
       "experience": [
          {
-            "role": "Engenheiro de Software Backend",
+            "role": "Backend Software Engineer",
             "org": "Auramind.ai",
             "period": "out 2025 — Presente",
             "location": "Goiânia, Brasil · Remoto",
@@ -45,7 +52,7 @@
             ]
          },
          {
-            "role": "Engenheiro de Software",
+            "role": "Software Engineer",
             "org": "B2BIT",
             "period": "jul 2024 — out 2025",
             "location": "Natal, Brasil · Híbrido",
@@ -58,7 +65,7 @@
             ]
          },
          {
-            "role": "Desenvolvedor Full-stack",
+            "role": "Full-stack Developer",
             "org": "Senac RN",
             "period": "fev 2023 — ago 2024",
             "location": "Natal, Brasil · Híbrido",
@@ -69,7 +76,7 @@
             ]
          },
          {
-            "role": "Desenvolvedor Full-stack",
+            "role": "Full-stack Developer",
             "org": "EA Web Development",
             "period": "jan 2021 — fev 2023",
             "location": "Natal, Brasil · Freelance",
@@ -101,13 +108,21 @@
       "interests": [
          "Arquitetura de software",
          "Design de sistemas",
-         "Integração de IA",
-         "Cloud-native (AWS)",
+         "Sistemas distribuídos",
          "Arquitetura limpa",
-         "Engenharia de backend"
+         "Domain-Driven Design",
+         "Test-driven development",
+         "Backend engineering",
+         "Design de APIs",
+         "Cloud-native (AWS)",
+         "Infrastructure as Code",
+         "Integração de IA",
+         "Inteligência Artificial",
+         "Performance e escalabilidade"
       ]
    },
    "portfolio": {
+      "eyebrow": "Trabalhos selecionados",
       "title": "Meu trabalho",
       "subtitle": "Algumas coisas que eu construí.",
       "viewProject": "Ver projeto",
@@ -118,17 +133,34 @@
          "previous": "Imagem anterior",
          "next": "Próxima imagem",
          "close": "Fechar",
-         "open": "Abrir imagem"
+         "open": "Abrir imagem",
+         "goToImage": "Ir para imagem",
+         "zoomIn": "Ampliar",
+         "zoomOut": "Reduzir"
       },
-      "backToList": "Voltar para meu trabalho"
+      "backToList": "Voltar para meu trabalho",
+      "galleryLabel": "Galeria",
+      "overviewLabel": "Visão geral",
+      "facts": { "role": "Função", "type": "Tipo", "status": "Status", "timeline": "Período" }
    },
    "blog": {
+      "eyebrow": "Escrita",
       "title": "Blog",
       "subtitle": "Notas sobre construir software.",
       "readMore": "Ler mais",
       "backToList": "Voltar ao blog",
       "empty": "Nenhum post publicado ainda.",
       "emptyHint": "Estou preparando os primeiros — volte em breve."
+   },
+   "contact": {
+      "eyebrow": "Contato",
+      "title": "Entre em contato",
+      "subtitle": "A forma mais rápida de falar comigo é pelo WhatsApp — email e telefone também funcionam.",
+      "whatsappLabel": "WhatsApp",
+      "emailLabel": "Email",
+      "phoneLabel": "Telefone",
+      "copy": "Copiar",
+      "copied": "Copiado"
    },
    "footer": {
       "rights": "Todos os direitos reservados."
@@ -140,5 +172,17 @@
    },
    "language": {
       "label": "Idioma"
+   },
+   "command": {
+      "placeholder": "Digite um comando ou busque…",
+      "empty": "Nenhum resultado encontrado.",
+      "hint": "Menu de comandos",
+      "groupNav": "Navegar",
+      "groupTheme": "Tema",
+      "groupLinks": "Links",
+      "groupLang": "Idioma",
+      "copyEmail": "Copiar e-mail",
+      "copiedEmail": "E-mail copiado",
+      "downloadCv": "Baixar CV"
    }
 }

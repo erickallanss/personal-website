@@ -15,4 +15,10 @@ export const localeNames: Record<Locale, string> = {
    'pt-br': 'PT',
 };
 
+/** Full language names — used for accessible labels on the flag-based language switcher. */
+export const localeNamesFull: Record<Locale, string> = {
+   en: 'English',
+   'pt-br': 'Português',
+};
+
 export const isLocale = (value: string): value is Locale => (locales as readonly string[]).includes(value);
