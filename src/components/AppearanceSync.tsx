@@ -13,7 +13,7 @@ export function AppearanceSync() {
       const root = document.documentElement;
       try {
          if (localStorage.getItem('linux') === '1') root.classList.add('linux');
-         const fg = localStorage.getItem('fg');
+         const fg = localStorage.getItem('fg2');
          if (fg) root.style.setProperty('--foreground', fg);
       } catch {
          // ignore storage failures

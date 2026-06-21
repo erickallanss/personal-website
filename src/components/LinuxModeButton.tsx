@@ -13,12 +13,13 @@ export function LinuxModeButton({ label }: { label: string }) {
          type="button"
          aria-label={label}
          title={label}
+         aria-pressed={active}
          onClick={() => (active ? exitToTheme() : enterLinux())}
          className={`grid size-8 place-items-center rounded-md text-[16px] leading-none transition-opacity ${
-            active ? 'opacity-100' : 'opacity-30 hover:opacity-70'
+            active ? 'opacity-100' : 'opacity-60 hover:opacity-100'
          }`}
       >
-         🐧
+         <span aria-hidden>🐧</span>
       </button>
    );
 }
